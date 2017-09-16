@@ -1,0 +1,58 @@
+{
+  "name": "core-elements",
+  "version": "0.0.1",
+  "description": "Repository which is suppose to contain",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "npm-install-peers"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simanaitis/demo-shared.git"
+  },
+  "author": "Povilas Simanaitis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simanaitis/demo-shared/issues"
+  },
+  "homepage": "https://github.com/simanaitis/demo-shared#readme",
+  "peerDependencies": {
+    "@angular/animations": ">=4.3.1",
+    "@angular/common": ">=4.3.1",
+    "@angular/compiler": ">=4.3.1",
+    "@angular/core": ">=4.3.1",
+    "@angular/forms": ">=4.3.1",
+    "@angular/http": ">=4.3.1",
+    "@angular/platform-browser": ">=4.3.1",
+    "@angular/platform-browser-dynamic": ">=4.3.1",
+    "@angular/platform-server": ">=4.3.1",
+    "@angular/router": ">=4.3.1",
+    "@angular/compiler-cli": ">=4.3.1",
+    "@ngrx/effects": "^4.0.2",
+    "@ngrx/router-store": "^4.0.4",
+    "@ngrx/store": "^4.0.3",
+    "@ngrx/store-devtools": "^4.0.0"
+  },
+  "devDependencies": {
+    "npm": "^5.4.2",
+    "npm-install-peers": "^1.2.0-rc.1"
+  },
+  "dependencies": {
+    "@angular/animations": "^4.4.1",
+    "@angular/common": "^4.4.1",
+    "@angular/compiler": "^4.4.1",
+    "@angular/compiler-cli": "^4.4.1",
+    "@angular/core": "^4.4.1",
+    "@angular/forms": "^4.4.1",
+    "@angular/http": "^4.4.1",
+    "@angular/platform-browser": "^4.4.1",
+    "@angular/platform-browser-dynamic": "^4.4.1",
+    "@angular/platform-server": "^4.4.1",
+    "@angular/router": "^4.4.1",
+    "@ngrx/effects": "^4.0.5",
+    "@ngrx/router-store": "^4.0.4",
+    "@ngrx/store": "^4.0.3",
+    "@ngrx/store-devtools": "^4.0.0"
+  }
+}
