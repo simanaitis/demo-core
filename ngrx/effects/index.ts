@@ -1,0 +1,1 @@
+export { CatalogEffect } from "./catalog.effects";

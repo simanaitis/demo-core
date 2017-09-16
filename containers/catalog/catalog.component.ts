@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import * as AppReducers from '../../reducers';
+import * as AppReducers from '../../ngrx/reducers';
 import SearchApi from 'js-worker-search';
-import { Product } from "../../models/product";
+import { IProduct } from "../../models/product";
 
 @Component( {
-    selector: 'app-catalog-container',
-    templateUrl: './catalog-container.component.html'
+    selector: 'catalog-container',
+    templateUrl: './catalog.component.html'
 } )
 export class CatalogContainerComponent implements OnInit {
 
-    public products: Product[];
+    public products: IProduct[];
     private searchApi: any;
     private catalog: any;
 

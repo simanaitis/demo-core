@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { Product } from "../../models/product";
+import { IProduct } from "../../models/product";
 
 export const LOAD_PRODUCTS = '[Product] load';
 export const LOAD_PRODUCTS_SUCCESS = '[Product] load success';
@@ -16,14 +16,14 @@ export class LoadProducts implements Action {
 export class LoadProductsSuccess implements Action {
     type: string = LOAD_PRODUCTS_SUCCESS;
 
-    constructor ( public payload: Product[] ) {
+    constructor ( public payload: IProduct[] ) {
     }
 }
 
 export class LoadProductsFail implements Action {
     type: string = LOAD_PRODUCTS_SUCCESS;
 
-    constructor ( public payload: Product[] ) {
+    constructor ( public payload: IProduct[] ) {
     }
 }
 

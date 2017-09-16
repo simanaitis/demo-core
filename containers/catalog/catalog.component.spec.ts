@@ -1,9 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
-import { CatalogContainerComponent } from './catalog-container.component';
 import { Store } from '@ngrx/store';
-import { MockStore } from '../load-catalog-data/mock-store';
+import { MockStore } from "../../ngrx/mock-store";
+import { CatalogContainerComponent } from "./catalog.component";
 
 describe('CatalogContainerComponent', () => {
   let component: CatalogContainerComponent;

@@ -1,10 +1,10 @@
 
 import * as CatalogActions from '../actions/catalog';
-import { Product } from "../../models/product";
+import { IProduct } from "../../models/product";
 
 export interface State {
     loaded: boolean;
-    products: Product[];
+    products: IProduct[];
 }
 
 const initialState: State = {

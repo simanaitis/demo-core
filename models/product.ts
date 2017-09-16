@@ -1,4 +1,4 @@
-export interface Product {
+export interface IProduct {
     name: string;
     SKU: number;
     metaKeywords: string;
