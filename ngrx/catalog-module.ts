@@ -1,8 +1,7 @@
-import { NgModule } from "@angular/core/src/core";
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { StoreModule } from "@ngrx/store/store";
 import { EffectsModule } from "@ngrx/effects/effects";
 import { CatalogEffect, CatalogReducer } from "./index";
-import { ModuleWithProviders } from "@angular/core/core";
 import { CatalogService } from "../index";
 
 @NgModule({
