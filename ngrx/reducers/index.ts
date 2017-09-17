@@ -1,2 +1,1 @@
-export { State } from "./catalog";
-export { reducer as CatalogReducer } from "./catalog";
+export { CatalogState, CatalogReducer } from "./catalog";

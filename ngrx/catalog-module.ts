@@ -1,8 +1,10 @@
-import { NgModule, ModuleWithProviders } from '@angular/core';
-import { StoreModule } from "@ngrx/store/store";
-import { EffectsModule } from "@ngrx/effects/effects";
-import { CatalogEffect, CatalogReducer } from "./index";
+import { NgModule } from "@angular/core";
+import { CatalogEffect } from "./index";
+import { ModuleWithProviders } from "@angular/core";
 import { CatalogService } from "../index";
+import { StoreModule } from "@ngrx/store";
+import { EffectsModule } from "@ngrx/effects";
+import { CatalogReducer } from "demo-core/ngrx/reducers";
 
 @NgModule({
 })
@@ -17,7 +19,7 @@ export class CoreCatalogModule {
 
 @NgModule({
   imports: [
-    StoreModule.forFeature('auth', CatalogReducer),
+    StoreModule.forFeature('catalog', CatalogReducer),
     EffectsModule.forFeature([CatalogEffect]),
   ],
 })

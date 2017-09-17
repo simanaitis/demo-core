@@ -2,17 +2,17 @@
 import * as CatalogActions from '../actions/catalog';
 import { IProduct } from "../../models/product";
 
-export interface State {
+export interface CatalogState {
     loaded: boolean;
     products: IProduct[];
 }
 
-const initialState: State = {
+const initialState: CatalogState = {
     loaded: false,
     products: []
 };
 
-export function reducer ( state = initialState, action: CatalogActions.All ): State {
+export function CatalogReducer ( state = initialState, action: CatalogActions.All ): CatalogState {
     switch ( action.type ) {
         case CatalogActions.LOAD_PRODUCTS: {
             return state;
