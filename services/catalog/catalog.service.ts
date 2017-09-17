@@ -1,15 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { Store } from '@ngrx/store';
-import * as AppReducers from '../../ngrx/reducers';
-import SearchApi from 'js-worker-search';
-import { IProduct } from "../../models/product";
+import { Injectable } from '@angular/core';
+import { IProduct } from "../../index";
+import { Store } from "@ngrx/store/store";
 
-@Component( {
-    selector: 'catalog-container',
-    templateUrl: './catalog.component.html'
-} )
-export class CatalogContainerComponent implements OnInit {
+@Injectable()
 
+export class CatalogService {
     public products: IProduct[];
     private searchApi: any;
     private catalog: any;
@@ -29,13 +24,10 @@ export class CatalogContainerComponent implements OnInit {
         } );
     }
 
-    ngOnInit () {
-    }
 
     public handleSearchChange ( searchValue: string ) {
         this.searchApi.search( searchValue ).then( ( matches ) => {
             this.products = matches.map( matchIndex => this.catalog.products[matchIndex] );
         } );
     }
-
 }
